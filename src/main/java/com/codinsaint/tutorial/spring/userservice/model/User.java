@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.springframework.boot.autoconfigure.web.ServerProperties.Tomcat.Resource;
 import org.springframework.hateoas.ResourceSupport;
 
 @Entity
@@ -64,6 +63,14 @@ public class User extends ResourceSupport implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ "]";
 	}
 
 }

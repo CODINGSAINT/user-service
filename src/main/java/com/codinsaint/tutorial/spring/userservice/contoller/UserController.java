@@ -17,6 +17,7 @@ import com.codinsaint.tutorial.spring.userservice.model.User;
 import com.codinsaint.tutorial.spring.userservice.repository.UserRepository;
 
 @RestController
+@RequestMapping("v1")
 public class UserController {
 	
 	@Autowired
